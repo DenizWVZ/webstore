@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document title</title>
+    <meta name="description" content="[A short description]">
+    <meta name="author" content="[Your Name]">
+    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+    <header class="topheader">
+      <!-- Site logo, replace with your own -->
+      <div class="mobileblock"></div>
+
+      <a href="index.html"><img class="logo change" src="img/ShooStore_Logo.jpg" alt="Shoo Store Logo"></a>
+
+      <nav class="topbar change-menu" aria-label="Primary">
+        <button class="topbar change" type="button">
+          <span class="material-icons">menu</span>
+        </button>
+      </nav>
+
+      <div class="toppanel">
+          <nav class="topbar tpitem1">
+              <div class="topbar content-to-hide">
+                <ul class="topbar">
+                  <li class="topbar"><a class="content-to-hide" href="#">Women</a></li>
+                  <li class="topbar"><a class="content-to-hide" href="#">Men</a></li>
+                  <li class="topbar"><a class="content-to-hide" href="#">About</a></li>
+                  <li class="topbar"><a class="content-to-hide" href="#">Profile</a></li>
+                </ul>
+              </div>
+          </nav>
+          <div class="tpitem2">
+              <form class="topbar content-to-hide" >
+                  <label>
+                    <input type="search" name="find" placeholder="Search" id="find">
+                  </label>
+                </form>
+                <ul class="topbar change-cart">
+                  <li class="topbar"><a href="#"><span class="material-icons">shopping_cart</span></a></li>
+                </ul>
+          </div>
+     </div>
+
+    </header>
+
+    <main>
+
+      <section class="body-cont">
+        <div class="banner">
+          <img src="img/product.jpg" alt="news banner">
+        </div>
+        <div class="filterblock">
+            <form>
+              <fieldset class="filterblock">
+                <label for="sort">Filters</label>
+                <select name="sort" id="sort">
+                  <option value="Boots">Boots</option>
+                  <option value="Dress Shoes">Dress Shoes</option>
+                  <option value="Sneakers">Sneakers</option>
+                </select>
+              </fieldset>
+            </form>
+          </div>
+        <!-- Product 1 -->
+        <div class="product1">        
+          <article class="mid-cont mobile-container">
+            <div class="picborder item1 mid">
+              <img class="productpic" src="img/shoe4.1.jpg" alt="Prada Shoe Side View">
+            </div>
+            <div class="item2">
+              <div class="productinfo txtchange mid">
+                <article>
+                    <header>
+                        <h3>Prada</h3>
+                    </header>
+                    <p class="info">Lace up shoe in</p>
+                    <p class="info">Brushed leather</p>
+                    <p class="addinfo">100% Calf leather</p>
+                    <div class="rating">
+                      <dl>
+                        <dt class="info">Rating</dt>
+                        <dd><span class="material-icons">panorama_fish_eye</span><span class="material-icons">panorama_fish_eye</span><span class="material-icons">panorama_fish_eye</span><span class="material-icons">panorama_fish_eye</span><span class="material-icons">panorama_fish_eye</span></dd>
+                      </dl>
+                    </div>
+                    <footer>
+                      <h2>950$</h2>
+                    </footer>
+                </article>
+            </div>
+            </div>
+            <div class="picborder item3 mid">
+                <img class="productpic" src="img/shoe4.3.jpg" alt="Prada Shoe Side View">
+            </div>
+            <div class="picborder item4 mid">
+                <img class="productpic" src="img/shoe4.4.jpg" alt="Prada Shoe Side View">
+            </div>
+            <div class="picborder item5 mid">
+              <img class="productpic" src="img/shoe4.2.jpg" alt="Prada Shoes Pair">
+            </div>
+            <div class="productinfo item6 mid">
+                <article>
+                  <form>
+                    <fieldset>
+                    <legend class="info">Sizes</legend>
+                     <ul>
+                       <li class="shoeoptions"><label><input type="radio" name="size" value="41"> 41</label></li>
+                       <li class="shoeoptions"><label><input type="radio" name="size" value="42"> 42</label></li>
+                       <li class="shoeoptions"><label><input type="radio" name="size" value="43"> 43</label></li>
+                       <li class="shoeoptions"><label><input type="radio" name="size" value="44"> 44</label></li>
+                     </ul>
+                   </fieldset>
+                   <fieldset>
+                     <legend class="info">Colours</legend>
+                     <ul>
+                        <li class="shoeoptions"><label><input type="radio" name="colour" value="b"> Black</label></li>
+                        <li class="shoeoptions"><label><input type="radio" name="colour" value="br"> Brown</label></li>
+                     </ul>
+                   </fieldset>
+                   <footer class="cartcontainer">
+                     <div class="cartbox">
+                        <button class="cart">Add to bag</button>
+                     </div>
+                   </footer>
+                  </form>
+                </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="btmcenter" role="navigation" aria-label="Pagination">
+        <p class="info btmcenter">1-5 of 23 products found</p>
+        <ol class="addinfo btmcenter">
+          <li class="bottom"><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+          <li class="bottom"><a href="#" aria-label="Page 2">2</a></li>
+          <li class="bottom"><a href="#" aria-label="Page 3">3</a></li>
+          <li class="bottom"><a href="#" aria-label="Page 4">4</a></li>
+          <li class="bottom"><a href="#" aria-label="Page 5">5</a></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="btmcenter">
+      <p class="addinfo">&copy; Copyright, 1991.</p>
+      <nav aria-label="Legal">
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility Policy</a></li>
+        </ul>
+      </nav>
+      <ul>
+        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
+        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>

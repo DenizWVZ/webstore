@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+
+@media (max-width:48.9em) {
+    
+    .content-to-hide {
+        display:none;
+    }
+
+    .mobileblock {
+        display: block;
+        background-color: white;
+        height: 3.3em;
+        width: 100%;
+        clear: both;
+        /*overflow: hidden;*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-bottom: solid 0.2em;
+        z-index: 500;
+
+    }
+
+    .logo.change {
+        background-color: white;
+        /*overflow: hidden;*/
+        position: fixed;
+        width: 30%;
+        height: 3em;
+        top: 0;
+        left: 35%;
+        right: 35%;
+        margin-top: 0em;
+        z-index: 500;
+
+    }
+
+    .topbar.change-menu {
+        background-color: white;
+        overflow: hidden;
+        position: fixed;
+        left: 1em;
+        top: 0.7em;
+        z-index: 500;
+    }
+
+    .topbar.change-cart {
+        background-color: white;
+        overflow: hidden;
+        position: fixed;
+        right: 1em;
+        top: 1em;
+        z-index: 500;
+    
+    }
+
+    .content-to-hide {
+        display: none;
+    }
+} */
+
+#myFakeElement { color:red ; }
+
+body { 
+    /*margin-top: 10em;*/
+    background-color: white;
+}
+
+h3 {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 2em;
+    padding-bottom: 0em;
+      
+}
+
+h2 {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+    padding-top: 1em;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+label {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+}
+
+select {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+}
+
+.filterblock {
+    display: block;
+    width: 100%;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+    /*background-color: #E6E7E8;*/
+    margin-top: 1em;
+}
+
+
+.logo {
+    display: block;
+    height: 4em;
+    width: 14em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    object-fit: cover;
+    
+}
+
+.topbar {
+    display: inline;
+}
+
+.picborder {
+    display: block;
+    border: 0.2em solid;
+    padding: 0.6em;
+    position: relative;
+}
+
+.productpic {
+    border: 0.2em solid;
+    /*max-width: 150%;
+    max-height: auto;
+    block-size: 17em;
+    max-width: 17em;*/    
+}
+
+.productinfo {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+    display: block;
+    padding: 1em;
+    /*width: 20em;
+    height: 27em;*/
+}
+
+.info {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+    padding-top: 0.5em;
+    white-space: nowrap;
+}
+
+.addinfo {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+    color: lightgray;
+    padding-top: 0.5em;
+    white-space: nowrap;
+}
+
+.shoeoptions {
+    display: inline-block;
+    padding-bottom: 1em;
+}
+
+.cartbox {
+    margin-top: 5em;
+}
+
+.cart {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    color: white;
+    background-color: black;
+    
+}
+
+.rating {
+    padding-top: 2em;
+}
+
+dt{
+    display: inline;
+}
+
+dd {
+    display: inline;
+    margin-left: 1em;
+    
+}
+
+li {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
+}
+
+.content-to-hide {
+    margin-left: 1em;
+    color: black;
+}
+
+
+.bottom {
+    display: inline;
+    text-align: center;
+}
+
+.btmcenter {
+    text-align: center;
+}
+
+@media screen and (min-width: 5em) {
+    .mobile-container {
+        display: grid;
+        grid-template-columns: auto minmax(10em, 30em) auto;
+        grid-template-rows: repeat(4,auto);
+        grid-row-gap: 1em;
+        margin: 1em;
+    }
+
+    .filterblock {
+        text-align: center;
+    }
+    
+    .item1 {
+        grid-column: 2;
+    }
+    
+    .item2 {
+        grid-column: 2;
+        /*padding-bottom: 5.5em;*/
+    }
+    
+    .item3 {
+        grid-column: 2;
+    }
+    
+    .item4 {
+        grid-column: 2;
+        /*padding-bottom: 5.5em;*/
+    }
+
+    .item5 {
+        grid-column: 2;
+    }
+
+    .item6 {
+        grid-column: 2;
+    }
+
+    
+}
+
+@media screen and (min-width: 49em) {
+
+    .toppanel {
+        display: grid;
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-rows: 1fr;    
+    }
+
+    .tpitem2 {
+        grid-column-start: 3;
+        margin-left: 5em;
+    }
+
+    .tpitem1 {
+        grid-column-start: 2;
+    }
+
+    .change-menu {
+        display: none;
+    }
+
+    .body-cont {
+        display: grid;
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: auto auto 1fr;
+        /*margin-left: 3em;
+        margin-right: 3em;*/
+
+    }
+
+    .filterblock {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        margin-top: -0.1em;
+        color: grey;
+        text-align: right;
+
+    }
+    
+    .banner {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        padding: 1em;
+        background-size: cover;
+    }
+
+    .product1 {
+        grid-column-start: 2;
+        grid-row: 3;
+
+    }
+
+    .product2 {
+        grid-column-start: 2;
+        grid-row: 4;
+    }
+
+    .product3 {
+        grid-column-start: 2;
+        grid-row: 5;
+    }
+
+    .product4 {
+        grid-column-start: 2;
+        grid-row: 6;
+    }
+
+    .product5 {
+        grid-column-start: 2;
+        grid-row: 7;
+    }
+
+    .product6 {
+        grid-column-start: 2;
+        grid-row: 8; 
+    }
+
+    .mid-cont {
+        display: grid;
+        grid-template-columns: minmax(auto, 50%) 1fr;
+        /*grid-template-rows: 50% 50% 50% 50%;*/
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        margin: 1em;
+
+    }
+
+    .item1.mid {
+        grid-column: 1;
+    }
+
+    .item2.mid {
+        grid-column: 2;
+    }
+
+    .item3.mid {
+        grid-column: 1;
+        grid-row:2;
+    }
+
+    .item4.mid {
+        grid-column: 2;
+        grid-row:2;
+    }
+
+    .item5.mid {
+        grid-column: 2;
+        grid-row:3;
+    }
+
+    .item6.mid {
+        grid-column: 1;
+        grid-row:3;
+    }
+
+    .txtchange{
+        direction: rtl;
+    }
+
+}
+
+/*@media screen and (min-width: 85em) {
+
+    .body-cont {
+        display: grid;
+        grid-template-columns: minmax(45%, 50%) minmax(45%, 50%);
+        grid-template-rows: repeat(5,auto);
+        grid-row-gap: 3em;
+        grid-column-gap: 5em;
+        margin-left: 10em;;
+        margin-right: 10em;
+    }
+
+    .banner {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        padding: 1em;
+        object-fit: cover;
+
+    }
+
+    .product1 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .product2 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .product3 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .product4 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .product5 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .product6 {
+        grid-column: 2;
+        grid-row: 5;
+    }
+}
